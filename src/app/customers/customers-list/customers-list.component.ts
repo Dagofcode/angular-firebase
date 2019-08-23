@@ -30,7 +30,7 @@ export class CustomersListComponent implements OnInit {
       });
   }
 
-  deleteCustomer() {
+  deleteCustomers() {
     this.customerService.deleteAll().catch(err => console.log(err));
   }
 }

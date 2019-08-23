@@ -7,6 +7,8 @@ import { AngularFireDatabase } from "angularfire2/database";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  title = "something";
+  description = "something else";
   courses: any[];
   constructor(db: AngularFireDatabase) {
     db.list("/courses")

@@ -4,6 +4,7 @@ import { AngularFireModule } from "angularfire2";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { environment } from "src/environments/environment";
+import { FormsModule } from "@angular/forms";
 
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { HeaderComponent } from "./header/header.component";
@@ -23,6 +24,7 @@ import { CreateCustomerComponent } from "./customers/create-customer/create-cust
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
